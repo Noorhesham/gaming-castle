@@ -1,0 +1,32 @@
+// font-family: 'Bebas Neue', sans-serif;
+// font-family: 'Changa', sans-serif;
+// font-family: 'Electrolize', sans-serif;
+// font-family: 'Poppins', sans-serif;
+.landing {
+    max-width: 100%;
+    margin-top: 7rem;
+    position: relative;
+    overflow: hidden;
+    &-2{
+      padding: 5rem 0 3rem 0;
+      overflow: hidden;
+    }
+    &-3{
+      padding: 0 1rem;
+      overflow: hidden;
+      padding-bottom: 15rem;
+    }
+  }
+  .landing::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    width: 150%;
+    height: 100%;
+    background-color:var(--color-Grey-dark-1) ;
+    z-index: -1;
+    border-radius: 0;
+    transform-origin: center;
+    transform: translateY(90%) translateX(-45%) skewX(20deg);
+  }

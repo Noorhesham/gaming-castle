@@ -1,0 +1,43 @@
+.box{
+    height: 80vh;
+    position: relative;
+    display: flex;
+    font-family: 'Changa', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: .4;
+    transform: translateX(10rem);
+    transition: all  2s  ease;
+    &-1{
+        background-color: var(--main-color);
+        padding-bottom: 4rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        color: var(--color-Grey-light-1);
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        margin-top: -20rem;
+    }
+    &__title{
+        color: var(--color-primary);
+        font-weight: 900;
+        font-size: 4.5rem;
+        &-2{
+            color: rgb(13, 131, 13);
+        }
+    }
+    &__back{
+        height: 80rem;
+       &-2{
+        height: 60rem;
+       }
+    }
+    &__pic{
+    height: 100%;
+    object-fit: contain;
+    }
+}

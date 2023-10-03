@@ -1,0 +1,26 @@
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/animation";
+@import "base/utilities";
+@import "layout/header";
+@import "layout/landing";
+@import "layout/results";
+@import "base/typography";
+
+@import "components/logo";
+@import "components/btn";
+@import "components/search";
+@import "components/slider";
+@import "components/game";
+@import "components/pagination";
+@import "components/mini-slider";
+@import "components/options";
+@import "components/box";
+@import "components/game-slider";
+@import "components/video";
+
+@import"phone/nav";
+@import "special-classes/special"

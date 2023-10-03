@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>gaming</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,700&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/43296d6011.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <script type="module" src="js/index.js" defer></script>
+        <script type="module" src="js/controller.js" defer></script>
+        <script type="module" src="js/results.js" defer></script>
+      </head>
+<body id="Games">
+  <header class="header">
+    <!-- PHONE -->
+    <nav class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi" />
+      <label for="navi" class="navigation__button" id="meow">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link"
+              ><span class="line"></span>home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link"
+              ><span class="line"></span>Games</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link"
+              ><span class="line"></span>creators</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link"
+              ><span class="line"></span>plattforms</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <!-- DESKTOP -->
+    <div class="logo">
+      <img src="img/logo (1).png" alt="icon" class="logo__img" />
+    </div>
+    
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="Game.html#home" id='home' class="nav__link"><span class="line"></span>home</a>
+      </li>
+      <li class="nav__item">
+        <a href="#Games" id='Games' class="nav__link"><span class="line"></span>Games</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link"><span class="line"></span>creators</a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="nav__link"><span class="line"></span>plattforms</a>
+      </li>
+    </ul>
+    
+    <a href="" class="button mobile">about us</a>
+   
+  </header>
+  <section class="result-bar margin-big" id="Games" >
+  <form action="#" class="srch-btn search search-visible " id="search-form">
+    <button class="srch-btn search__button search__button-visible">
+      <svg class="srch-btn search__icon">
+        <use
+          class="srch-btn search__icon-visible"
+          xlink:href="img/sprite.svg#icon-magnifying-glass"
+        ></use>
+      </svg>
+    </button>
+    <input
+      id="search"
+      type="text"
+      class="srch-btn search__input search__input-visible"
+      placeholder="Search for a game "
+      autocomplete="off"
+    />
+    <div class="result-box"></div>
+  </form>
+  <div class="options">
+    <div class="option"><div class="top-results head menu__option" id="2" data-filter="parent_platforms">top results </div></div>
+    <div class="head">filter By <i class="fa-solid fa-angles-down" style="color: #d5d6d8;"></i>
+    </div>
+    <div class="option platt">
+      <div class="select">
+      <div class="head" data-filter="parent_platforms">platforms</div>
+      <i class="fa-solid fa-sort-down  menu__icon" style="color: #d5d6d8;"></i>
+    </div>
+    <ul class="head menu">
+      <li class="menu__option" id="2">playsation</li>
+      <li class="menu__option" id="3">xbox</li>
+      <li class="menu__option" id="1">pc</li>
+    </ul>
+  </div>
+
+    <div class="option stores filter">
+      <div class="select">
+      <div class="head" data-filter="stores">stores</div>
+      <i class="fa-solid fa-sort-down menu__icon" style="color: #d5d6d8;"></i>
+    </div>
+      <ul class="head menu">
+        <li class="menu__option" id="3">playsation</li>
+        <li class="menu__option" id="2">xbox</li>
+        <li class="menu__option" id="1">steam</li>
+        <li class="menu__option" id="4">nentindo</li>
+      </ul>
+    </div>
+
+    <div class="option genre">
+      <div class="select">
+        <div class="head" data-filter="genres">genre</div>
+        <i class="fa-solid fa-sort-down menu__icon" style="color: #d5d6d8;"></i></div>
+    <ul class="head menu">
+      <li class="menu__option" id="4">Action</li>
+      <li class="menu__option" id="51">indie</li>
+      <li class="menu__option" id="3">Adventure</li>
+      <li class="menu__option" id="5">RPG</li>
+      <li class="menu__option" id="2">Shooter</li>
+      <li class="menu__option" id="10">Strategy</li>
+      <li class="menu__option" id="83">Platformer</li>
+      <li class="menu__option" id="1">racing</li>
+      <li class="menu__option" id="15">sports</li>
+      <li class="menu__option" id="6">fighting</li>
+    </ul>
+</div>
+    <!-- <div class="option head order">order By <i class="fa-solid fa-angles-down" style="color: #d5d6d8;"></i></div>
+    <div class="option head">date </div>
+    <div class="option head">show dlc</div> -->
+</div>
+</section>
+<section class="search__titlee" id="Games"></section>
+    <section class="search_results" id="Games">
+        
+         </section>
+         <div class="pagination__results">
+         
+         </div>
+</body>
+</html>

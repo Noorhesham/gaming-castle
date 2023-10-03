@@ -1,0 +1,30 @@
+.hidden{
+    opacity: 0;
+    transition: .3s all;
+}
+
+.slided{
+    opacity: 1 !important;
+}
+.hovered{
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+.unhovered{
+    opacity: .5;
+}
+.paragraph-active{
+    opacity: 1  !important;
+    transform: translateY(0)  !important;
+}
+.mobile{
+    display: inline-block;
+    @include respond(bigtablet){
+        display: none !important;
+        visibility: none !important;
+    }
+}
+.margin-big{margin-top: 11rem;}
+.margin-r-s{margin-right: 1rem;}
+
+.sticky{transform: translateY(-3.5rem);}
