@@ -1,0 +1,178 @@
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4.4rem;
+    margin-bottom: 1.2rem;
+    pointer-events: none;
+    &-game{
+        font-size: 3.4rem;
+        font-weight: 200;
+        color: var(--color-primary-light);
+        margin: 2.2rem 3rem ;
+    }
+}
+.sub-title{
+    pointer-events: none;
+    font-weight: 300;
+    font-size: 2rem;
+    color: var( --color-Grey-light-4);
+    text-transform: capitalize;
+    &-primary{
+        color: var(--color-primary);
+        font-weight: 800;
+        text-align: center;
+    }
+    &-1{
+        color: white;
+    }
+}
+.paragraph{
+    width: 60rem;
+    font-size: 1.6rem;
+    color: white;
+    margin: 1rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0.5px 0.5px 0.5px;
+    margin: 2rem 0;
+    line-height: 2rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    &-2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        width: 50rem;
+        margin-top: 0;
+    }
+    @include respond(tablet){
+        width: 50rem;
+        font-size: 1.7rem;
+    }
+    @include respond(smallphone){
+        width: 30rem;
+        text-align: center;
+      }
+    
+}
+.head{
+    color: var(--color-Grey-light-4);
+    font-weight: 400;
+    font-size: 1.4rem;
+    transition: all .3s;
+    text-transform: uppercase;
+    @include respond(phone){
+     font-size: 1rem;
+      }
+}
+.note{
+    text-align: end;
+    text-transform: capitalize;
+    color: var(--color-primary-light);
+    font-weight: 700;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10rem;
+    margin-top: 1rem;
+    @include respond(phone){
+        font-size: .7rem;
+        bottom: -1.5rem;
+        right: 1rem;
+        margin: 0;
+      }
+}
+.tech__title{
+    font-family: 'Changa', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 4.5rem;
+    padding: 1.5rem;
+ text-transform: uppercase;
+
+}
+.center-title{
+    font-family: 'Electrolize', sans-serif;
+    text-align: center;
+    position: relative;
+    &::after{
+       content: "";
+       position: absolute;
+       width: 25rem;
+       border-radius: 1rem;
+       height: 6px;
+       background-color: var(--color-primary-dark);
+       bottom: 0;
+       left: 42%;
+       @include respond(bigtablet){
+        left: 38%;
+       }
+       @include respond(phone){
+        left: 29%;
+       }
+    }
+}
+
+.game-name{
+    font-size: 4.8rem;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    &-2{
+        font-size: 3rem;
+    }
+}
+.bold-title{
+    font-family:"sst",Arial,sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+.game__paragraph{
+    color: var(--color-Grey-light-1);
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 1rem;
+    @include respond(tablet){
+        width: 100%;
+        font-size: 1.5rem;
+        width: 95%;
+       }
+}
+.alert{
+    padding: 2rem;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  line-height: 3rem;
+  position: relative;
+  font-size: 2rem;
+  z-index: 3000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  @include respond(tablet){
+    line-height: 2rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+  }
+}
+.closebtn {
+    position: absolute;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-left: 15px;
+    right: 4%;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 20px;
+    transition: all .3s;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-42%);
+    animation: appear 2s;
+  }
+      

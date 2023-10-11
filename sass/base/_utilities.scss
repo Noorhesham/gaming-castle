@@ -1,0 +1,117 @@
+.hidden{
+    opacity: 0;
+    transition: .3s all;
+    z-index: 0!important;
+}
+
+.slided{
+    opacity: 1 !important;
+}
+.hovered{
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+.unhovered{
+    opacity: .5;
+}
+.paragraph-active{
+    opacity: 1  !important;
+    transform: translateY(0)  !important;
+}
+.mobile{
+    display: inline-block;
+    @include respond(bigtablet){
+        display: none !important;
+        visibility: none !important;
+    }
+}
+.margin-big{margin-top: 11rem;}
+.margin-r-s{margin-right: 1rem;}
+.margin-l-s{margin-left: 1rem;}
+.margin-top-s{
+    margin-top: 3rem;
+}
+.sticky{
+    transform: translateY(-3.5rem);
+    @include respond(bigtablet){
+        transform: none;
+    }
+}
+.margin{
+    margin: 2rem;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+.icon-size{
+    font-size: 2rem;
+}
+.imagea{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hidden-2{
+    visibility: hidden!important;
+    display: none!important;
+}
+.overlay{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(4px) !important;
+    z-index: 100 !important;
+    transition: all 0.5s !important;
+    &-img{
+        visibility: visible;
+        display: block;
+        position: fixed;
+        top: 50%;
+        width: 120rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 101;
+    }
+}
+.exist{
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    font-size: 8rem;
+    cursor: pointer;
+    z-index: 300;
+    
+}
+.spinner{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.spinning{
+    font-size: 10rem;
+    animation: spin 1s linear infinite  ;
+    margin: 5rem auto;
+    text-align: center;
+}
+.spinsmall{
+    font-size: 2rem!important;
+    position: absolute;
+    left: 50%;
+    bottom: 0!important;
+    margin-top: -2rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 54rem;
+    align-items: center;
+}

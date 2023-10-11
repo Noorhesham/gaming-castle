@@ -1,0 +1,299 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gaming</title>
+  <link rel="icon" href="img/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@300;400;500;700&family=Electrolize&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://kit.fontawesome.com/43296d6011.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <script type="module" src="js/index.js" defer></script>
+  <script type="module" src="js/controller.js" defer></script>
+</head>
+<body id="platforms">
+  <header class="header">
+    <!-- PHONE -->
+    <nav class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi" />
+      <label for="navi" class="navigation__button" id="meow">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="Index.html" class="navigation__link"
+              ><span class="line"></span>home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="results.html" class="navigation__link"
+              ><span class="line"></span>Games</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="platforms.html" class="navigation__link"
+              ><span class="line"></span>plattforms</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#footer" class="navigation__link"
+              ><span class="line"></span>About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <!-- DESKTOP -->
+    <div class="logo">
+      <img src="img/logo (1).png" alt="icon" class="logo__img" />
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="Index.html" id="home" class="nav__link"
+          ><span class="line"></span>home</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="results.html" id="Games" class="nav__link"
+          ><span class="line"></span>Games</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="platforms.html" id="platforms" class="nav__link"
+          ><span class="line"></span>plattforms</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="#footer"id='platforms' class="nav__link"><span class="line"></span>about</a>
+      </li>
+    </ul>
+
+    <div id="wishlistparent" class=" wishlist2 wishlist2-2 wish">  
+      <span class="fontsize wish"><ii class="fa-solid fa-heart-circle-plus margin-r-s wish" style="color: #1a6af4;"></ii>  wishlist</span><i  class='wish'></i>
+  <div class="wishlist-box hidden-2 wishlist-box-2"></div>
+</div>
+  </header>
+  <a href="#" class="noselect">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"
+      />
+    </svg>
+  </a>
+  <section id="platforms">
+  
+
+    <h2 class="tech__title">top plattforms</h2>
+
+    <div class='outerslider'>
+      <span class="game-btn game-buttonprev game-buttonprev-3" id="left"
+      ><i class="fa-solid fa-circle-chevron-left" style="color: #234fd1;"></i></span>
+    <span class="game-btn game-buttonnext game-buttonnext-3" id="right"
+      ><i class="fa-solid fa-circle-chevron-right" style="color: #234fd1;"></i>
+    </span>
+    <div class="platforms">
+
+    </div>
+
+    </div>
+    <section class="" id="Games">
+      <form action="#" class="srch-btn search search-visible" id="search-form">
+        <button class="srch-btn search__button search__button-visible">
+          <svg class="srch-btn search__icon">
+            <use
+              class="srch-btn search__icon-visible"
+              xlink:href="img/sprite.svg#icon-magnifying-glass"
+            ></use>
+          </svg>
+        </button>
+        <input
+          id="search"
+          type="text"
+          class="srch-btn search__input search__input-visible"
+          placeholder="Search for a game "
+          autocomplete="off"
+        />
+        <span class="closebtn hidden-2 srch-btn"> &times;</span>
+      </form>
+      <section class="search_results search_results-2" id="platforms"></section>
+    </section>
+    <div class="pagination__results"></div>
+
+  </section>
+  <div id="wrapper">
+    <div id="spiderman">
+      <div class="head">
+        <div class="eye-left"></div>
+        <div class="eye-right"></div>
+      </div>
+      <div class="body">
+        <div class="spider"></div>
+        <div class="arm-left"></div>
+        <div class="arm-right"></div>
+      </div>
+      <div class="legs">
+        <div class="boot-left"></div>
+        <div class="boot-right"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-section" id="footer">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Egypt, Mansoure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>using social media 😁</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>noordragon2004@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href=""><img src="img/logo (2).png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>gaming website,fullstack project using rwag api By Noor Hesham</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <ul class="wrapper">
+                              <li class="icon facebook">
+                                <a class="tooltip">Facebook</a>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                              </li>
+                              <li class="icon twitter">
+                                <a class="tooltip">Twitter</a>
+                                <span><i class="fab fa-twitter"></i></span>
+                              </li>
+                              <li class="icon instagram">
+                                <a class="tooltip">Instagram</a>
+                                <span><i class="fab fa-instagram"></i></span>
+                              </li>
+                              <li class="icon github">
+                                <a class="tooltip">Github</a>
+                                <span><i class="fab fa-github"></i></span>
+                              </li>
+                              <li class="icon youtube">
+                                <a class="tooltip">Youtube</a>
+                                <span><i class="fab fa-youtube"></i></span>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, All Right to <a href="">Noor Hesham</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>

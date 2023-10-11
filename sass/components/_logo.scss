@@ -1,0 +1,29 @@
+.logo {
+    margin-left: 5rem;
+    @include respond(phone){
+        margin-left: 0;
+    }
+    display: flex;
+    &__img{
+        text-align: center;
+        width: 20rem;
+        @include respond(phone){
+            width: 14rem;
+        }
+    }
+   
+    @include respond(bigtablet){
+        position: absolute;
+      }
+    }
+.icon{
+    width: 40rem;
+    margin-bottom: 1rem;
+    @include respond(tablet){
+        width: 39rem;
+    }
+
+}
+.iconn{
+margin: .4rem;
+}

@@ -1,0 +1,30 @@
+#platforms{
+    margin-top: 8rem;
+}
+.platforms{
+    margin-bottom: 4rem;
+
+    display: flex;
+    font-family: 'Changa', sans-serif;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    background-image: linear-gradient(to right top, #6b79d1, #6e82d6, #728bda, #7794de, #7d9de2, #75a9eb, #6fb4f2, #69bff8, #52cffe, #41b6ff, #46a3fa, #5f81fb);    padding: 6rem 1rem;
+    position: relative;
+}
+.game-plat{
+    cursor: pointer;
+    background-color: var(--main-color)!important;
+    margin: .5rem;
+width: 44rem !important;
+}
+.game__background-plat{
+width: 44rem !important;
+}
+.plat__results{
+    position: relative;
+}

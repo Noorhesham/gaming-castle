@@ -1,0 +1,180 @@
+.slider {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  &-1 {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+  }
+  &-3 {
+    height: 100%;
+    width: 100%;
+  }
+}
+// .line-2{
+//   position: absolute;
+//   width: 0%;
+//   height: 0.8rem;
+//   background: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+//   bottom: -3px;
+//   left: 0;
+//   opacity: 1;
+//   transition: all 0.5s;
+//   z-index: 1;
+// }
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+  /* THIS creates the animation! */
+  transition: all 1s;
+  &-1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__background {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    &-static{
+      height: 100% !important;
+      position: relative;
+      width: 100% !important;
+    }
+    &-height{
+      @include respond(tablet){
+        height: 100% !important;
+        width: auto;
+      }
+   
+    }
+    @include respond(phone){
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    z-index: 3;
+    overflow: hidden;
+    position: absolute;
+    left: 6rem;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-1rem);
+    transition: all 1.8s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+    opacity: 0;
+    @include respond(tablet) {
+      top: 56%;
+    }
+  }
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    &-2 {
+      padding: 2rem;
+      transform: scale(0.98);
+    }
+    &-3 {
+      width: 100%;
+      height: 100%;
+    }
+    &-4 {
+      filter: blur(3px);
+      width: 100%;
+      height: 100%;
+    }
+    &-small {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      pointer-events: none;
+    }
+  }
+  &__pagination {
+    width: 100%;
+    gap: 3rem;
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: --main-color;
+    @include respond(tablet) {
+      flex-wrap: wrap;
+      padding: 3.5rem 1.5rem;
+      justify-content: space-evenly;
+    }
+
+  }
+  &__button {
+    width: 25em;
+    height: 13rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s all;
+    position: relative;
+    overflow: hidden;
+    @include respond(tablet) {
+      width: 23rem;
+      height: 11rem;
+    }
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: var(--shadow-dark);
+      opacity: 0.7;
+    }
+  }
+}
+.active {
+  border-radius: 2rem;
+  padding: 0.2rem;
+  border: 3px solid var(--color-primary);
+  transform: translateY(-1rem);
+  box-shadow: var(--neon-light);
+}
+.load {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 100%;
+  opacity: 0.3;
+  animation: loading 5s linear infinite;
+  background-color: var(--color-Grey-dark-3);
+}
+.infoico {
+  top: 16% !important;
+  @include respond(tablet) {
+    top: 30% !important;
+  }
+}
+.gradient {
+  position: absolute;
+  background: radial-gradient(
+    rgba(23, 23, 23, 0.1215686275),
+    rgba(0, 0, 0, 0.1451),
+    rgba(0, 0, 0, 1.495)
+  );
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  &-2 {
+    background: radial-gradient(rgba(23, 23, 23, 0.1215686275),rgba(0, 0, 0, 0.3451),rgb(0, 0, 0)) !important;
+  }
+}

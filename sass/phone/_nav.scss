@@ -1,0 +1,123 @@
+.navigation{
+    display: none;
+    @include respond(bigtablet){
+        display: block;
+    }
+    &__checkbox{
+        display: none;
+        }
+    &__button{
+        background-color: var(--color-primary);
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 0;
+        right: 0rem;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba(black,.3);
+        cursor: pointer;
+    
+}
+&__icon{
+    &,&::before,&::after{
+        width: 3rem;
+        height: 3px;
+        background-color: #ffffff;
+        display: inline-block;
+    }
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    
+    &::before,&::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before{top: 1.2rem;}
+    &::after{top: -1.2rem;}
+}
+&__background{
+    width:0;
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--main-color-2);
+    z-index: 1000;
+    transition: all .5s cubic-bezier(.86,0,.07,1);
+    }
+&__checkbox:checked ~&__background{
+    display: block;
+    transition: all .5s cubic-bezier(.86,0,.07,1);
+    transform: translateX(6rem);
+    width: 60%;
+    height: 100%;
+    @include respond(bigtablet){
+        width: 40%;
+    }
+    @include respond(tablet){
+        width: 45%;
+    }
+    @include respond(phone){
+        width: 60%;
+    }
+}
+&__checkbox:checked ~&__nav{
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+&__nav{
+    display: none;
+    opacity: 0;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    transition: all .4s;
+}
+&__list{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    transform: translate(0%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(tablet){
+        right: 15%;
+    }
+    @include respond(bigtablet){
+        right: 9%;
+    }
+}
+&__item{
+display: block;
+&:not(:last-child){
+    margin-bottom: 2.5rem;
+}
+}
+&__link{
+    &:link,&:visited{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 2.5rem;
+        transition: .3s all;
+        position: relative;
+        &:hover  > span{
+          width: 100%;
+        }
+}}
+}

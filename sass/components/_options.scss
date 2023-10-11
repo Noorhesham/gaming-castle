@@ -1,0 +1,105 @@
+.options{
+    user-select: none;
+    display: flex;
+    background-color: var(--main-color-2);
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    transition: all .3s;
+    margin-left: 2rem;
+    @include respond(tablet){
+        gap: .5rem;
+      }
+      @include respond(phone){
+        gap: .3rem;
+        padding: .5rem .1rem;
+        margin: 0;
+      }
+}
+.option{
+    position: relative;
+    transition: all .3s;
+    color: white!important;
+    cursor: pointer;
+    &-active{
+        color: var(--color-Grey-light-2) !important;
+        padding: .2rem .5rem;
+        font-weight: 500;
+        border-radius: 2.5rem;
+        background-color: var(--color-primary-dark)!important;
+    }
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    &>:hover{
+        color: white;
+        border: transparent ;
+        text-shadow: 0 .5rem 4rem rgba(black,.7);
+    }
+}
+.menu{
+    position: absolute;
+    background-color: #323741;
+    left: 50%;
+    top: 2.5rem;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: .2rem .5rem;
+    box-shadow: 0 .5rem 1rem rgba(black,.7);
+    border-radius: .5rem;
+    opacity: 1;
+    height: 0%;
+    z-index: 1000000000000;
+    transition: all 1s;
+    display: none;
+    &-active{
+        height: 100%;
+     display: table;
+    }
+    &__icon{
+        transition: all .3s;
+        margin-left: .5rem;
+        @include respond(phone){
+            margin: .2rem;
+        }
+    }
+    &__option{
+        padding: .7rem .5rem;
+        @include respond(phone){
+            padding: 0;
+        }
+        margin: .3rem 0;
+        border-radius: .5rem !important;
+        transition: all .3s;
+        width:100%;
+        @include respond(smallphone){
+            padding: 0;
+          }
+        &:hover{
+            color: white;
+        background-color: var(--main-color-2);
+        }
+    }
+}
+
+.options-active{
+    box-shadow: 0 .5rem 1rem var(--color-primary-dark);
+}
+.icon-active{
+    transform: rotate(180deg);
+}
+.search__titlee{
+    position: relative;
+    z-index: -1;
+}
+.top-results{
+    transition: all .3s;
+    &:hover{
+        color: var(--color-primary);
+    }
+}
